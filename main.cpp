@@ -69,7 +69,7 @@ void printWordle(vector<vector<int>> match, vector<string> guess, int currGuessI
     cout<<"||    #+#+# #+#+#  #+#    #+# #+#    #+# #+#    #+# #+#            #+#     #+#   #+#+# #+#   #+#     ||"<<endl;
     cout<<"||     ###   ###    ########  ###    ### #########  ########## ########### ###    #### ###    ###    ||"<<endl;
     cout<<"======================================================================================================"<<endl;
-    cout<<"Rules:"<<<endl;
+    cout<<"Rules:"<<endl;
     cout<<"1. Guess the word in less than "+::to_string(NO_OF_GUESS)+" guesses."<<endl;
     cout<<"2. Green colour indicates correct letter in correct position"<<endl;
     cout<<"3. Yellow colour indicates correct letter in incorrect position"<<endl;
