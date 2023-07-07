@@ -59,6 +59,7 @@ bool isAllMatch(string target, string guess){
 
 void printWordle(vector<vector<int>> match, vector<string> guess, int currGuessIndex){
     //clear console
+    //use system("clear") for Linux, MacOS, and Unix-based systems
     system("cls");
     cout<<"======================================================================================================"<<endl;
     cout<<"||   :::       :::  ::::::::  :::::::::  :::::::::  :::        ::::::::::: ::::    ::: :::    :::    ||"<<endl;
