@@ -2,6 +2,8 @@
 #include<vector>
 #include<string>
 #include<algorithm>
+#include<fstream>
+#include<cstdlib>
 //#include<windows.h>
 #include<cctype>
 
@@ -19,8 +21,17 @@ void toUpperCase(string &input){
 }
 
 string getRandomWord(){
-    //TODO fetch random word from API (ex: WordsAPI)
-    return "ready";
+    std::ifstream in ( "5letterWords.txt" );
+    std::string word;
+
+    if (!in){
+        return "apple";
+    }
+    int r = rand() % 1000;
+    do
+        in>> word;
+    while ( --r >= 0 );
+    return word;
 }
 
 bool isValid(string word){
